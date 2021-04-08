@@ -22,11 +22,29 @@ const SettingDialog = () => (
     <div className={styles.container}>
         <div>
             <b> Sound </b>
-            <Slider />
+            <Slider
+            defaultValue={20}/>
         </div>
         <div>
             <b> Brightness </b>
-            <Slider />
+            <Slider
+            defaultValue={50}/>
+        </div>
+        <div>
+            <b> Voting Time </b>
+            <Slider
+            defaultValue={20}
+            aria-labelledby="discrete-slider-restrict"
+            step={10}
+            valueLabelDisplay="auto"/>
+        </div>
+        <div>
+            <b> Discussion Time </b>
+            <Slider
+                defaultValue={60}
+                aria-labelledby="discrete-slider-restrict"
+                step={10}
+                valueLabelDisplay="auto"/>
         </div>
         <div>
             <StyledButton variant="contained">Leave Game</StyledButton>
